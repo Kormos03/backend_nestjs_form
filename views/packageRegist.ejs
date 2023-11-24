@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Package registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <form method="post">
+        <label>
+            Serial number: <br>
+            <input type="text" name="serial_number">
+        </label>
+        <label>
+            Condition: <br>
+            <input type="text" name="condition">
+        </label>
+        <label>
+            Name: <br>
+            <input type="string" name="name">
+        </label>
+        <% errors.forEach((msg)=> { %>
+            <p class="errorMessage">
+                <%= msg %>
+            </p>
+            <% }); %>
+                <input type="submit" value="Regist the package">
+
+    </form>
+</body>
+
+</html>
